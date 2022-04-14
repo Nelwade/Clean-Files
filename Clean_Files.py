@@ -26,20 +26,13 @@ def is_download_complete(item):  # Function to check if download is complete
         return True
 
 
-# main_dir name of the directory where you download your tv shows into, per episode
-# it can take a user input
-
-
 def sort_tvshows(main_dir):
 
     # change into the directory to allow creation of directories and moving of files
-    
-    # print(os.getcwd())
-
-    #check if the folder named Series exists, if it does not create the folder
 
     os.chdir(main_dir)
     
+    #check if the folder named Series exists, if it does not create the folder
     if os.path.exists('Series'):
         current_path = os.path.join(main_dir, 'Series')
     else: 
@@ -54,7 +47,6 @@ def sort_tvshows(main_dir):
 
             if item.endswith('mkv') or item.endswith('mp4') or 'S0' in item or 'Season' and 'Complete' in item:
                 # Filter out videos and Tv shows in folders with "
-                # print(item)
                 if is_download_complete(item):              
 
                     folder_name = ""
@@ -158,4 +150,6 @@ def clean_disk(main_dir):
     sort_tvshows(main_dir)
     sort_movies(main_dir)
 
+# main_dir name of the directory where you download your tv shows into, per episode
+# it can take a user input
 clean_disk("D:/Test_folder")
