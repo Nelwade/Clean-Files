@@ -30,12 +30,12 @@ def clean_disk(main_dir):
 # Manually creating logs to track all actions the program takes
 # The path will vary according to where you want to store your logs
 if os.path.exists(r'C:\Users\Stewie\Dropbox\My PC (DESKTOP-57VNQ1O)\Documents\Python projects\Clean Files\logs.txt'):
-        with open('logs.txt', 'a') as logs:
+        with open('logs.txt', 'a', encoding="utf-8") as logs:
             sys.stdout = logs
             clean_disk("D:/")
     
 else:
     os.chdir(r'C:\Users\Stewie\Dropbox\My PC (DESKTOP-57VNQ1O)\Documents\Python projects\Clean Files')
-    with open('logs.txt', 'w') as logs:
+    with open('logs.txt', 'w', encoding="utf-8") as logs:
         sys.stdout = logs
         clean_disk("D:/")

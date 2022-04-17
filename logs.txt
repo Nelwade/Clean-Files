@@ -10,3 +10,50 @@ Download of show Severance.S01.COMPLETE.1080p.WEBRip.AC3.x264-LESS is not comple
 Cleaning Movie Files......
 Cleaning Music Files......
 <built-in function exc_info> Error occurred in check_if_music for System Volume Information
+
+
+ 2022-04-17 20:47:15.357964 
+-----------------------------------
+
+Cleaning Tv Show Files........
+
+Download of show Severance.S01.COMPLETE.1080p.WEBRip.AC3.x264-LESS is not complete
+
+Cleaning Movie Files......
+Cleaning Music Files......
+
+Now copying Five Finger Death Punch - Discography to Music folder
+
+
+ 2022-04-17 20:50:41.632503 
+-----------------------------------
+
+Cleaning Tv Show Files........
+
+Download of show Severance.S01.COMPLETE.1080p.WEBRip.AC3.x264-LESS is not complete
+
+Cleaning Movie Files......
+Cleaning Music Files......
+
+Now copying Hinder - Greatest Hits 2018 to Music folder
+
+Now copying J. Cole - The Off-Season (Explicit)  (2021) Mp3 320kbps [PMEDIA] ⭐️ to Music folder
+
+Now copying Lifehouse - Greatest Hits (2017) to Music folder
+
+Now copying Pop Evil Discography to Music folder
+
+Now copying Rhumba Mp3 to Music folder
+
+Now copying Simple Plan - Greatest Hits to Music folder
+<built-in function exc_info> Error occurred in check_if_music for System Volume Information
+
+Now copying Taylor Swift - Red (Taylor's Version) (2021) Mp3 320kbps [PMEDIA] ⭐️ to Music folder
+
+Now copying The Beatles - Essentials (2022) Mp3 320kbps [PMEDIA] ⭐️ to Music folder
+
+Now copying U2 2014 - Songs of Innocence to Music folder
+
+Now copying VA - Best of Rock 2021 (Mp3 320kbps) [PMEDIA] ⭐️ to Music folder
+
+Now copying VA - VH1 100 Greatest Dance Songs (2022) Mp3 320kbps [PMEDIA] ⭐ to Music folder
