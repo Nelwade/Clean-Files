@@ -5,6 +5,7 @@ import sys
 import is_download_complete
 
 def clean_movies(main_dir):
+    print("Cleaning Movie Files....\n")
     # change into the directory to allow creation of directories and moving of files
     os.chdir(main_dir)
     
