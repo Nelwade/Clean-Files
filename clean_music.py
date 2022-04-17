@@ -2,7 +2,6 @@ import os
 import string
 import shutil
 import sys
-from tabnanny import check
 import is_download_complete
 
 def clean_music(main_dir):
@@ -13,7 +12,7 @@ def clean_music(main_dir):
         try:
             if item.lower().endswith('mp3') or item.lower().endswith('flac') or 'FLAC' in item or 'Mp3' in item or 'Discography' in item or 'discography' in item or '320kbps' in item or 'Greatest Hits' in item:
                 return True
-            elif item == "Music":
+            elif item == "Music" or item == "Series" or item == "Movies":
                 return False
             elif os.path.isdir(item): # incase of a directory
                 for item in os.listdir(current_path):
@@ -63,7 +62,3 @@ def clean_music(main_dir):
             print("{} did not move because of {}".format(
                 item, sys.exc_info()))
 
-
-
-#for item in os.listdir('D:/Test_folder'):
-clean_music('D:/Test_folder')
