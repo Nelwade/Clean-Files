@@ -2,6 +2,7 @@ import os
 import string
 import shutil
 import sys
+from tabnanny import check
 import is_download_complete
 
 def clean_music(main_dir):
@@ -10,19 +11,18 @@ def clean_music(main_dir):
     
     def check_if_music(main_dir, item): #function to check if file is a music file
         try:
-            current_path = os.path.join(main_dir, item)
             if item.lower().endswith('mp3') or item.lower().endswith('flac') or 'FLAC' in item or 'Mp3' in item or 'Discography' in item or 'discography' in item or '320kbps' in item or 'Greatest Hits' in item:
                 return True
             elif item == "Music":
                 return False
-            elif os.path.isdir(current_path): # incase of a directory
+            elif os.path.isdir(item): # incase of a directory
                 for item in os.listdir(current_path):
-                    next_path =os.path.join(current_path, item)
-                    return check_if_music(next_path, item)      
+                    current_path = os.path.join(main_dir, item)
+                    return check_if_music(current_path, item)    #recursivity for folders within folders  
             else:
                 return False
         except:
-            print(item, sys.exc_info)
+            print(sys.exc_info, "Error occurred in check_if_music for {}".format(item))
 
     os.chdir(main_dir)
     
@@ -41,7 +41,7 @@ def clean_music(main_dir):
             # check if file is a music file or folder
             if check_if_music(main_dir, item):    
                 # check if the download is complete
-                if is_download_complete.is_download_complete(item):
+                if is_download_complete.is_download_complete(main_dir, item):
                 
                     os.chdir(current_path)
                     
@@ -62,3 +62,8 @@ def clean_music(main_dir):
         except:
             print("{} did not move because of {}".format(
                 item, sys.exc_info()))
+
+
+
+#for item in os.listdir('D:/Test_folder'):
+clean_music('D:/Test_folder')

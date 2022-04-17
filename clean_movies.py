@@ -16,7 +16,7 @@ def clean_movies(main_dir):
                 # Filter out movies from tv shows "
 
                 if "S0" not in item: 
-                    if is_download_complete.is_download_complete(item):
+                    if is_download_complete.is_download_complete(main_dir, item):
 
                         if os.path.exists("Movies"):
                             # if a Movies already exists, copy into folder

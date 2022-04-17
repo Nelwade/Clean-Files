@@ -24,7 +24,7 @@ def clean_tvshows(main_dir):
 
             if item.endswith('mkv') or item.endswith('mp4') or 'S0' in item or 'Season' and 'Complete' in item:
                 # Filter out videos and Tv shows in folders with "
-                if is_download_complete.is_download_complete(item):              
+                if is_download_complete.is_download_complete(main_dir, item):              
 
                     folder_name = ""
 
