@@ -5,6 +5,8 @@ import sys
 import is_download_complete
 
 def clean_tvshows(main_dir):
+    
+    print("Cleaning Tv Show Files........")
 
     # change into the directory to allow creation of directories and moving of files
     os.chdir(main_dir)
