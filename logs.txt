@@ -1,0 +1,12 @@
+
+
+ 2022-04-17 20:21:18.682626 
+-----------------------------------
+
+Cleaning Tv Show Files........
+
+Download of show Severance.S01.COMPLETE.1080p.WEBRip.AC3.x264-LESS is not complete
+
+Cleaning Movie Files......
+Cleaning Music Files......
+<built-in function exc_info> Error occurred in check_if_music for System Volume Information

@@ -54,9 +54,13 @@ def clean_tvshows(main_dir):
                         
                         os.chdir(destpath) #change into tv show folder
 
-                        if os.path.exists(item): # check if file already exists in tv show folder
-                            print("{} already exists in folder, Deleting".format(item)) 
-                            os.remove(sourcepath) #delete item
+                        if os.path.exists(item): # check if movie already exists in the movies folder
+                                print("{} already exists in folder, Deleting".format(item))
+                                
+                                if os.path.isdir(item):
+                                    shutil.rmtree(os.path.join(sourcepath)) # delete if directory
+                                else: 
+                                    os.remove(sourcepath) #delete if file
                         else:
                             shutil.move(sourcepath, destpath)
                             print("\nFolder exists, copying {} to {} folder".

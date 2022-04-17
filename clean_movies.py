@@ -5,7 +5,7 @@ import sys
 import is_download_complete
 
 def clean_movies(main_dir):
-    print("Cleaning Movie Files....\n")
+    print("Cleaning Movie Files......")
     # change into the directory to allow creation of directories and moving of files
     os.chdir(main_dir)
     
@@ -30,8 +30,12 @@ def clean_movies(main_dir):
                             os.chdir(destpath)
 
                             if os.path.exists(item): # check if movie already exists in the movies folder
-                                print("{} already exists in folder, deleting".format(item)) 
-                                os.remove(item) #delete item
+                                print("{} already exists in folder, Deleting".format(item))
+                                
+                                if os.path.isdir(item):
+                                    shutil.rmtree(os.path.join(sourcepath)) # delete if directory
+                                else: 
+                                    os.remove(sourcepath) #delete if file
                             else:
                                 shutil.move(sourcepath, destpath)
                         else:
