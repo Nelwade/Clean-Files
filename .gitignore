@@ -1,0 +1,8 @@
+
+clean_venv
+__pycache__
+cleanfiles.bat
+logs.txt
+__pycache__/clean_movies.cpython-39.pyc
+__pycache__/clean_movies.cpython-39.pyc
+__pycache__/is_download_complete.cpython-39.pyc
