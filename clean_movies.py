@@ -12,7 +12,7 @@ notification = ToastNotifier() # creates a window notification
 
 def clean_movies(main_dir):
     print("\n\n\nCleaning Movie Files......")
-    notification.show_toast("Clean Files", "Cleaning Movie Files", duration = 30)
+    notification.show_toast("Clean Files", "Cleaning Movie Files", duration = 3)
     # change into the directory to allow creation of directories and moving of files
     os.chdir(main_dir)
 

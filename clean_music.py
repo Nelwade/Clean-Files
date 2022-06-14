@@ -13,7 +13,7 @@ notification = ToastNotifier() # creates a window notification
 def clean_music(main_dir):
     
     print("\n\n\nCleaning Music Files......")
-    notification.show_toast("\n\n\nClean Files", "Cleaning Music Files", duration = 30)
+    notification.show_toast("\n\n\nClean Files", "Cleaning Music Files", duration = 3)
 
     # def check_if_music(main_dir, item): #function to check if file is a music file
     #     try:

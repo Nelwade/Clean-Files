@@ -11,14 +11,14 @@ notification = ToastNotifier() # creates a window notification
 
 def notification_error():
     try:
-        notification.show_toast("Clean Files", str(sys.exc_info), duration = 60)
+        notification.show_toast("Clean Files", str(sys.exc_info), duration = 10)
     except:
         print(str(sys.exc_info()))
 
 def clean_tvshows(main_dir):
     
     print("Cleaning Tv Show Files........")
-    notification.show_toast("Clean Files", "Cleaning Tv Files", duration = 30)
+    notification.show_toast("Clean Files", "Cleaning Tv Files", duration = 3)
 
     # change into the directory to allow creation of directories and moving of files
     os.chdir(main_dir)
